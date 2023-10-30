@@ -1,0 +1,550 @@
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* Navigation Bar Styles */
+#nav {
+    /* Styling for the navigation bar */
+    font-family: 'Caudex', sans-serif;
+    background: #24262b;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    transition: top 0.3s;
+}
+
+.nav a {
+    /* Navigation link styles */
+    text-decoration: none;
+}
+
+.logo {
+    /* Styling for the logo */
+    color: #F0F0E1;
+    font-size: 46px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 80px;
+    height: 75px;
+    padding: 8px;
+}
+
+.logo span {
+    color: #e91e63;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #F0F0E1;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #00CCCC;
+    transition: 0.5s;
+}
+
+/* Impacts Part Styles*/
+
+.main-container {
+    /* For the main content container */
+    background-color: #F0F0E1;
+    width: 100%;
+    height: 100%;
+}
+
+#impacts-container {
+    width: 100%;
+    align-content: center;
+}
+
+#impacts-container h1 {
+    font-family: 'Caudex', serif;
+    padding: 7vw 2vw 0vw 2vw;
+    font-size: 8vw;
+    color: #121212;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#impacts-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 5%;
+    color: #121212;
+    margin-top: 0;
+    line-height: 1.5;
+    width: 75%;
+}
+
+#impacts-container img {
+    margin: auto;
+    height: 90%;
+    display: block;
+    width: 50%;
+}
+
+hr {
+    width: 75%;
+    margin-top: 55px;
+}
+
+/* Scroll Animation Styles */
+section {
+    /* Styling for individual sections on the page */
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    /* For hidden elements used in a scroll animation */
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    /* For shown elements used in a scroll animation */
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* Community Part Styles */
+
+#community-container {
+    /* "Community Impacts" section */
+    display: flex;
+    flex-direction: row;
+}
+
+#community-container div {
+    width: 50%;
+}
+
+#community-container div.community-text {
+    padding: 60px;
+}
+
+.community-image {
+    /* Background image in the community section */
+    height: 100vh;
+    background-image: url(./assets/images/community.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: -1000px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+#community-container h3 {
+    font-family: 'Caudex', serif;
+    font-size: 50px;
+    color: #121212;
+    text-align: center;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 0 0 0.6em 0;
+}
+
+#community-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #121212;
+    margin: 1.6em 0 1.6em 0;
+    line-height: 1.5;
+}
+
+
+#community-container hr {
+    width: 100%;
+    margin-top: 55px;
+}
+
+#community-container button {
+    margin-top: -100px;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    font-size: 15px;
+    background-color: #36454f;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* Firefighter Part Styles*/
+
+#firefighters-container {
+    /* For the "Impacts on Forests" section */
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#firefighters-container div {
+    width: 50%;
+}
+
+#firefighters-container div.firefighters-text {
+    padding: 60px;
+    margin-top: -100px;
+}
+
+#firefighters-container div.firefighters-image {
+    /* Background image in the firefighters section */
+    height: 100vh;
+    background-image: url(./assets/images/firefighters.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 7px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+#firefighters-container h3 {
+    font-family: 'Caudex', serif;
+    font-size: 50px;
+    color: #121212;
+    text-align: center;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 0 0 0.6em 0;
+}
+
+#firefighters-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #121212;
+    margin: 1.6em 0 1.6em 0;
+    line-height: 1.5;
+}
+
+#firefighters-container hr {
+    width: 100%;
+    margin-top: 55px;
+}
+
+/* Forest Part Styles */
+
+#Forests-container {
+    /* For the "Impacts on Forests" section */
+    display: flex;
+    flex-direction: row;
+}
+
+#Forests-container div {
+    width: 50%;
+}
+
+#Forests-container div.Forests-text {
+    padding: 60px;
+}
+
+#Forests-container div.Forests-image {
+    /* Background image in the Forests section */
+    height: 100vh;
+    background-image: url(./assets/images/burnt-tree.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 7px;
+    margin-top: -800px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+#Forests-container h3 {
+    font-family: 'Caudex', serif;
+    font-size: 50px;
+    color: #121212;
+    text-align: center;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 0 0 0.6em 0;
+}
+
+#Forests-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #121212;
+    margin: 1.6em 0 1.6em 0;
+    line-height: 1.5;
+}
+
+
+#Forests-container hr {
+    width: 100%;
+    margin-top: 55px;
+}
+
+/* Wildlife Part Styles */
+
+#wildlife-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#wildlife-container div {
+    width: 50%;
+}
+
+#wildlife-container div.wildlife-text {
+    padding: 60px;
+}
+
+#wildlife-container div.wildlife-image {
+    /* Background image in the wildlife section */
+    height: 100vh;
+    background-image: url(./assets/images/wildlife.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 7px;
+    margin-top: -900px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+#wildlife-container h3 {
+    font-family: 'Caudex', serif;
+    font-size: 50px;
+    color: #121212;
+    text-align: center;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 0 0 0.6em 0;
+}
+
+#wildlife-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #121212;
+    margin: 1.6em 0 1.6em 0;
+    line-height: 1.5;
+}
+
+#wildlife-container hr {
+    width: 100%;
+    margin-top: 55px;
+}
+
+/* Smoke Animation Styles */
+
+.text span {
+    /* Styles for individual span elements used in a smoke animation */
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.text span.active {
+    /* Styles for active span elements in the smoke animation */
+    animation: smoke 2s linear forwards;
+    transform-origin: bottom;
+}
+
+@keyframes smoke {
+    0% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        pointer-events: none;
+    }
+
+    100% {
+        opacity: 0;
+        filter: blur(20px);
+        transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
+    }
+}
+
+/* About Us Styles*/
+
+#about-us div.about-us-text {
+    background-color: #F0F0E1;
+    color: #121212;
+    opacity: .75;
+    position: absolute;
+    font-weight: 900;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #24262b;
+    border-radius: 35px;
+    padding: 20px;
+    width: 60%;
+    height: 50%;
+}
+
+.about-us-image {
+    /* For the background image in the "About Us" section */
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/images/about-us.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3px;
+    top: 0;
+}
+
+#about-us h4 {
+    font-family: 'Caudex', serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 1.6em 0 0.6em 0;
+}
+
+#about-us p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin: 1.6em 0 1.6em 0;
+    line-height: 1.5;
+}
+
+#about-us hr {
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+
+* {
+    /* Global styles for all elements to reset margin and padding */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 33.333%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/* Mouse cursor */
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: #121212;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999;
+}
